@@ -38,5 +38,11 @@ class TestCalculateWeightOnPlanets(unittest.TestCase):
         for planet, weight in result.items():
             self.assertTrue(weight < 0)
 
+    def test_convert_weight_to_unit(self):
+        weight_kg = 10
+        self.assertAlmostEqual(convert_weight_to_unit(weight_kg, "lb"), 22.0462, places=4)
+        self.assertAlmostEqual(convert_weight_to_unit(weight_kg, "oz"), 352.74, places=2)
+        self.assertAlmostEqual(convert_weight_to_unit(weight_kg, "kg"), 10, places=4)
+
 if __name__ == "__main__":
     unittest.main()
