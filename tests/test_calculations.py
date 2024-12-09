@@ -1,5 +1,5 @@
 import unittest
-from calculations import calculate_weight_on_planets, convert_weight_to_unit
+from src.calculations import calculate_weight_on_planets, convert_weight_to_unit
 
 class TestCalculateWeightOnPlanets(unittest.TestCase):
     def test_positive_earth_weight(self):

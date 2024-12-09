@@ -22,6 +22,3 @@ def main():
     except ValueError:
         print("Entrada inválida! Por favor, insira um número.")
 
-
-if __name__ == "__main__":
-    main()
